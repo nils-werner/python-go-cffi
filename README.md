@@ -11,5 +11,5 @@ Compilation:
 
 Test:
 
-    ./c/main           # Test the C part
+    cd c && ./main     # Test the C part
     python py/test.py  # Test the Python part
