@@ -80,4 +80,5 @@ _testmain.go
 *.prof
 
 main
+sum
 _*.py
