@@ -4,6 +4,7 @@ import "C"
 import "unsafe"
 import "reflect"
 import "fmt"
+import "math"
 
 // Integer + Integer Summation
 //export Sum
@@ -18,6 +19,14 @@ func Asum(a *[]float64) (sum float64) {
         sum += v
     }
     return
+}
+
+// Sine from Array
+//export Asin
+func Asin(a *[]float64, out *[]float64) {
+    for i, v := range *a {
+        (*out)[i] = math.Sin(v)
+    }
 }
 
 // Transform C double array to Go Slice
