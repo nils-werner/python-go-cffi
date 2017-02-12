@@ -1,6 +1,8 @@
+from __future__ import absolute_import
+
 import os
 import numpy
-from _gosum import ffi
+from ._gosum import ffi
 
 here = os.path.dirname(os.path.abspath(__file__))
 lib = ffi.dlopen(os.path.join(here, "__gosum.so"))

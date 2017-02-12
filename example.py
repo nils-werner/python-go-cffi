@@ -1,3 +1,4 @@
+from __future__ import print_function
 import contextlib
 import numpy
 import time
@@ -11,7 +12,7 @@ def time_print(task_name="", repititions=4):
     try:
         yield
     finally:
-        print task_name, ":", time.time() - t, "s"
+        print(task_name, ":", time.time() - t, "s")
 
 
 # Sin of NumPy array using Go
