@@ -82,3 +82,5 @@ _testmain.go
 main
 sum
 _*.py
+!__init__.py
+.eggs

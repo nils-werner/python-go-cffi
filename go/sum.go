@@ -8,7 +8,7 @@ import "math"
 
 // Integer + Integer Summation
 //export Sum
-func Sum(a, b int) int {  
+func Sum(a, b int) int {
     return a + b
 }
 
@@ -44,4 +44,4 @@ func main() {
     a := []float64{1000.0, 2.0, 3.4, 7.0, 50.0}
     fmt.Printf("%+v\n", a)
     fmt.Printf("%+v\n", Asum(&a))
-} 
+}
